@@ -17,15 +17,13 @@ extern SEXP auc_SZ(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, S
 extern SEXP Cham_Diao(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP, SEXP);
 
 static const R_CMethodDef CEntries[] = {
-  {"auc_uno", (DL_FUNC) &auc_uno, 15},
-  {NULL, NULL, 0}
-};
+    {"auc_uno", (DL_FUNC)&auc_uno, 15},
+    {NULL, NULL, 0}};
 
 static const R_CallMethodDef CallEntries[] = {
-  {"auc_SZ",    (DL_FUNC) &auc_SZ,    13},
-  {"Cham_Diao", (DL_FUNC) &Cham_Diao, 11},
-  {NULL, NULL, 0}
-};
+    {"auc_SZ", (DL_FUNC)&auc_SZ, 13},
+    {"Cham_Diao", (DL_FUNC)&Cham_Diao, 11},
+    {NULL, NULL, 0}};
 
 void R_init_survAUC(DllInfo *dll)
 {

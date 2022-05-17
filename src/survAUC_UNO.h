@@ -7,6 +7,6 @@
  *
  */
 
-void auc_uno( double *auc, double *i_auc, double *sens, double *spec, double *surv_time,
+void auc_uno(double *auc, double *i_auc, double *sens, double *spec, double *surv_time,
 			 double *status, double *thres, double *t, double *marker, double *new_surv_t,
 			 double *new_event, int *n_th, int *n_t, int *n_new_data, int *n_surv);
