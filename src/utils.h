@@ -7,6 +7,13 @@
  *
  */
 
+#define USE_FC_LEN_T
+#include <Rconfig.h>
+#include <R_ext/BLAS.h>
+#ifndef FCONE
+# define FCONE
+#endif
+
 #include <R.h>
 #include <Rmath.h>
 #include <Rinternals.h>
