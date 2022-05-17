@@ -45,6 +45,8 @@
 #' \emph{Journal of the American Statistical Association} \bold{102}, 527--537.
 #'
 #' @examples
+#' library(survival)
+#'
 #' TR <- ovarian[1:16, ]
 #' TE <- ovarian[17:26, ]
 #' train.fit <- coxph(Surv(futime, fustat) ~ age, x = TRUE, y = TRUE, method = "breslow", data = TR)

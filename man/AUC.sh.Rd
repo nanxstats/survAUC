@@ -69,9 +69,11 @@ estimators remain valid even if the censoring times depend on the values of
 the predictors.
 }
 \examples{
+library(survival)
+
 TR <- ovarian[1:16, ]
 TE <- ovarian[17:26, ]
-in.fit <- coxph(Surv(futime, fustat) ~ age, x = TRUE, y = TRUE, method = "breslow", data = TR)
+train.fit <- coxph(Surv(futime, fustat) ~ age, x = TRUE, y = TRUE, method = "breslow", data = TR)
 
 lp <- predict(train.fit)
 lpnew <- predict(train.fit, newdata = TE)

@@ -52,9 +52,11 @@
 #' \bold{18}, 947--965.
 #'
 #' @examples
+#' library(survival)
+#'
 #' TR <- ovarian[1:16, ]
 #' TE <- ovarian[17:26, ]
-#' in.fit <- coxph(Surv(futime, fustat) ~ age, x = TRUE, y = TRUE, method = "breslow", data = TR)
+#' train.fit <- coxph(Surv(futime, fustat) ~ age, x = TRUE, y = TRUE, method = "breslow", data = TR)
 #'
 #' lp <- predict(train.fit)
 #' lpnew <- predict(train.fit, newdata = TE)

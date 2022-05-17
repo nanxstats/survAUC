@@ -36,6 +36,8 @@
 #' \bold{25}, 3474--3486.
 #'
 #' @examples
+#' library(survival)
+#'
 #' TR <- ovarian[1:16, ]
 #' TE <- ovarian[17:26, ]
 #' train.fit <- coxph(Surv(futime, fustat) ~ age, x = TRUE, y = TRUE, method = "breslow", data = TR)

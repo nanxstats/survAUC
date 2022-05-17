@@ -53,6 +53,8 @@ on the predictor. Note that the estimators implemented in \code{sens.uno},
 where the random censoring assumption holds.
 }
 \examples{
+library(survival)
+
 TR <- ovarian[1:16, ]
 TE <- ovarian[17:26, ]
 train.fit <- coxph(Surv(futime, fustat) ~ age, x = TRUE, y = TRUE, method = "breslow", data = TR)

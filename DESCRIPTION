@@ -1,17 +1,17 @@
 Package: survAUC
 Version: 1.0-5
-Title: Estimators of prediction accuracy for time-to-event data.
+Title: Estimators of Prediction Accuracy for Time-to-Event Data
+Description: The package provides a variety of functions to estimate
+    time-dependent true/false positive rates and AUC curves from a
+    set of censored survival data.
 Authors@R: c(
     person("Sergej", "Potapov", email = "sergej.potapov@gmail.com", role = c("aut")),
     person("Werner", "Adler", role = c("aut")),
     person("Matthias", "Schmid", role = c("aut")),
     person("Nan", "Xiao", email = "me@nanx.me", role = c("aut", "cre"))
     )
-Description: The package provides a variety of functions to estimate
-    time-dependent true/false positive rates and AUC curves from a
-    set of censored survival data.
-Depends: survival
-Suggests: rms
+Suggests:
+    survival
 License: GPL-2
 Encoding: UTF-8
 RoxygenNote: 7.1.2

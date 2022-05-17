@@ -43,6 +43,8 @@ Note that the recursive estimators proposed in Sections 3.1 and 3.2 of
 Chambless and Diao (2006) are not implemented in the \bold{survAUC} package.
 }
 \examples{
+library(survival)
+
 TR <- ovarian[1:16, ]
 TE <- ovarian[17:26, ]
 train.fit <- coxph(Surv(futime, fustat) ~ age, x = TRUE, y = TRUE, method = "breslow", data = TR)

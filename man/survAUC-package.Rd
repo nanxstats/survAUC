@@ -4,7 +4,7 @@
 \name{survAUC-package}
 \alias{survAUC}
 \alias{survAUC-package}
-\title{survAUC: Estimators of prediction accuracy for time-to-event data.}
+\title{survAUC: Estimators of Prediction Accuracy for Time-to-Event Data}
 \description{
 The package provides a variety of functions to estimate time-dependent true/false positive rates and AUC curves from a set of censored survival data.
 }
